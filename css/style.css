@@ -6993,14 +6993,6 @@ nav[aria-label="breadcrumb"]{
 	top: calc(50% - 11px);
 }
 
-.oap-wrap{
-	display: block;
-	margin: 0 auto;
-	background: none;
-	font-size: 0;
-	letter-spacing: 0;
-}
-
 /* oap loan cash */
 .bg-left-section{
 	background-color: #F6F6F7;
@@ -7025,6 +7017,38 @@ nav[aria-label="breadcrumb"]{
 #oap-loan-cash .sub-title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 18px;
+}
+.oap-content .left-title{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 26px;
+	padding-bottom: 10px;
+}
+.oap-content .left-desc{
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 14px;
+	line-height: 20px;
+}
+#oap-loan-cash .btn-wrap .card-register-center{
+	margin-bottom: 20px;
+}
+.btn-wrap p{
+	display: block;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 14px;
+}
+.btn-wrap p a{
+	color: #CF3339;
+}
+#oap-loan-cash .btn-wrap{
+	margin-bottom: 60px;
+}
+
+.oap-wrap{
+	display: block;
+	margin: 0 auto;
+	background: none;
+	font-size: 0;
+	letter-spacing: 0;
 }
 
 .oap-wrap > div{
