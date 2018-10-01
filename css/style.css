@@ -87,10 +87,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
 	font-family: 'Conv_SukhumvitTadmai_Thi';
 	font-size: 16px;
-	letter-spacing: 0.5px;
+	line-height: 1.4;
 }
 ol, ul {
 	list-style: none;
@@ -411,6 +410,7 @@ a:hover{
 
 .menu-global .content-wrap{
 	display: flex;
+	background: #000;
 }
 
 .menu-global .content-wrap > *{
@@ -1073,6 +1073,12 @@ button:focus {
 	border-top: 1px solid #dfe1e1;
 	padding-bottom: 13px;
 	padding-top: 8px;
+}
+
+.oap-footer.last-piece{
+	max-width: none;
+	background: #ededed;
+	border: none;
 }
 
 .license{
@@ -2551,8 +2557,8 @@ a.card-register-center, a.btn-action {
 }
 
 /* creditcard detail -eve*/
-#header-card-detail .proud-head{
-  margin-bottom: 125px;
+.oap-wrap #header-card-detail .proud-head{
+  height: 256px;
 }
 #header-card-detail .header-title{
   font-family: 'Conv_SukhumvitTadmai_Bol';
@@ -6985,6 +6991,72 @@ nav[aria-label="breadcrumb"]{
 
 .filter-content .brand-wrap .checkmark{
 	top: calc(50% - 11px);
+}
+
+.oap-wrap{
+	display: block;
+	margin: 0 auto;
+	background: none;
+	font-size: 0;
+	letter-spacing: 0;
+}
+
+.oap-wrap > div{
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+	width: 566px;
+}
+
+.oap-wrap .oap-left{
+	width: calc(100% - 566px);
+	padding-bottom: 105px;
+}
+
+.oap-wrap .proud-head img{
+	height: 160px;
+}
+
+.oap-wrap #header-card-detail .header-title{
+	font-size: 22px;
+}
+
+.oap-wrap .page-merchant-inner-header h2{
+	font-size: 16px;
+}
+
+.oap-wrap #header-card-detail .content-desc h2{
+	font-size: 22px;
+}
+
+.oap-wrap #header-card-detail .content-desc h3{
+	font-size: 16px;
+}
+
+.bg-grey{
+	background: rgba(91,102,112,0.05);
+}
+
+.oap-wrap .service-desc h5{
+	font-size: 16px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	margin:20px 0 10px 0;
+}
+
+.oap-wrap .service-desc p,
+.oap-wrap .service-desc li{
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.oap-wrap .service-desc li{
+	list-style-type: decimal;
+	margin-left: 15px;
+}
+
+.oap-wrap .service-desc p a{
+	color: #CF3339;
+	text-decoration: underline;
 }
 
 
