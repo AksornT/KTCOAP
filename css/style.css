@@ -7059,6 +7059,40 @@ nav[aria-label="breadcrumb"]{
 	text-decoration: underline;
 }
 
+.oap-wrap .box-login-con{
+	text-align: center;
+	padding-top: 30px;
+}
+
+.oap-wrap .box-login-con h3{
+	padding: 0;
+}
+
+.oap-wrap .box-login-con label,
+.oap-wrap .box-login-con span{
+	text-align: left;
+	display: block;
+}
+
+.oap-wrap .box-login-con .sub-head{
+	margin-top: 20px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	font-size: 18px;
+}
+
+.oap-wrap .box-input-form span{
+	color: rgba(0,0,0,0.6);
+}
+
+.red-notice{
+	color: #CF3339 !important;
+	padding: 0 5px;
+}
+
+.btn-wrap button + span{
+	margin: -10px 0 30px 0;
+}
+
 
 /*Safari Only*/
 @media not all and (min-resolution:.001dpcm)
