@@ -28,8 +28,9 @@
     display: none;
   }
   .menu-global .on-right .only-mobile{
-  	display: inline-block;
-    padding: 15px 0;
+    display: inline-block;
+    padding: 15px 0 15px 15px;
+    top: 0;
   }
   .on-right .profile-image img{
     width: 28px;
@@ -750,7 +751,8 @@
 
   /* login page -eve */
   .last-piece.for-login-pg .text-right{
-    display: inline-block;
+    display: flex;
+    align-self: center;
     padding-right: 0px;
   }
   .last-piece.for-login-pg .text-right .lang-footer label{
