@@ -2815,6 +2815,20 @@ section .form-register-completed .img-result {
 	line-height: 54px;
 	padding-bottom: 10px;
 }
+
+.oap div#header-page-success p{
+	font-size: 28px;
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	line-height: 54px;
+	padding-bottom: 10px;
+}
+
+.oap div#sub-header-page-success p{
+	font-size: 16px;
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+	line-height: 22px;
+	color: #5B6670;
+}
 .main-loan a{
 	cursor: pointer;
 }
@@ -3887,16 +3901,35 @@ section#section-flexi-cards {
 
 /* login page -eve */
 .on-right.header-login-pg{
-	padding-top: 24px;
+	padding-top: 0px;
 	cursor: pointer;
 }
+.on-right.header-login-pg.oap a{
+	border:1px solid white;
+	padding:5px 17px;
+	border-radius:6px;
+}
+.on-right.header-login-pg.oap a *{
+	vertical-align: middle;
+}
+
+
+
 .on-right.header-login-pg p{
 	padding-left: 6px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
-  font-size: 16px;
+  	font-size: 16px;
 	display: inline-block;
 	color: #fff;
 }
+.on-right.header-login-pg.oap p{
+	padding-left: 6px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+  	font-size: 16px;
+	display: inline-block;
+	color: #fff;
+}
+
 .bg-login{
 	background: url("../img/bg-login.png");
 	background-size: 100% 100%;
@@ -4283,12 +4316,17 @@ button.btn-back-step{
 	display: none;
 }
 /* register for member success */
-.bg-login .card-register-center{
-	margin-top: 25px;
-	margin-bottom: 145px;
+.bg-login.oap .card-register-center{
+	margin-top: 40px;
+	margin-bottom: 60px;
+	padding:12px 37px;
 }
 .bg-login .img-result {
     margin-bottom: 25px;
+}
+
+.bg-login.oap .img-result-1{
+	/*width:100%;*/
 }
 
 .search-input-wrap{
@@ -6998,26 +7036,26 @@ nav[aria-label="breadcrumb"]{
 	background-color: #F6F6F7;
 	background-size: cover;
 }
-#oap-loan-cash .item img{
+#oap-loan .item img{
 	width: 100%;
     box-shadow: none;
     border-radius: 0px;
 }
-#oap-loan-cash .index-slide1 .item{
+#oap-loan .index-slide1 .item{
 	padding-top: 0;
 }
-#oap-loan-cash .index-slide1 .item img:hover{
+#oap-loan .index-slide1 .item img:hover{
 	top: auto;
 }
-#oap-loan-cash .owl-prev span,
-#oap-loan-cash .owl-next span{
+#oap-loan .owl-prev span,
+#oap-loan .owl-next span{
 	display: none;
 }
-#oap-loan-cash .content-title{
+#oap-loan .content-title{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 24px;
 }
-#oap-loan-cash .sub-title{
+#oap-loan .sub-title{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 18px;
 }
@@ -7034,7 +7072,7 @@ nav[aria-label="breadcrumb"]{
 .oap-content{
 	padding-bottom: 210px;
 }
-#oap-loan-cash .btn-wrap .card-register-center{
+#oap-loan .btn-wrap .card-register-center{
 	margin-bottom: 20px;
 }
 .btn-wrap p{
@@ -7045,8 +7083,14 @@ nav[aria-label="breadcrumb"]{
 .btn-wrap p a{
 	color: #CF3339;
 }
-#oap-loan-cash .btn-wrap{
+#oap-loan .btn-wrap{
 	margin-bottom: 60px;
+}
+.app-download{
+	padding-bottom: 105px;
+}
+.btn-app-download{
+	padding-top: 20px;
 }
 
 .oap-wrap{
