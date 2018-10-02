@@ -1763,5 +1763,32 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       padding-top: 200px;
     }
 
+    /* oap loan success */
+    #oap-loan-success .proud-regis-complete .desc-title{
+      font-size: 20px;
+    }
+    #oap-loan-success .proud-regis-complete .desc-result{
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .app-download .media {
+      padding: 0;
+    }
+    .app-download h5{
+      font-size: 14px;
+    }
+    .app-download p{
+      font-size: 17px;
+      line-height: 20px;
+      padding-bottom: 0px;
+    }
+    .app-download span{
+      font-size: 10px;
+    }
+    #oap-loan-success.bg-login .card-register-center {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
 
 }

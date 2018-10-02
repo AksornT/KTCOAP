@@ -1388,4 +1388,21 @@
     padding-top: 230px;
   }
 
+  /* oap loan success */
+  #oap-loan-success .proud-regis-complete .desc-title{
+    font-size: 28px;
+  }
+  .app-download p{
+    font-size: 22px;
+    line-height: 28px;
+    color: #CF3339;
+    margin-top: 3px;
+  }
+  .app-download span{
+    font-size: 14px;
+  }
+  .app-download .media {
+    padding: 0 70px;
+  }
+
 }
