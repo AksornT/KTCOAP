@@ -7099,6 +7099,7 @@ nav[aria-label="breadcrumb"]{
 	margin:20px 0 10px 0;
 }
 
+/*OAP*/
 .oap-wrap .service-desc p,
 .oap-wrap .service-desc li{
 	font-size: 14px;
@@ -7147,6 +7148,12 @@ nav[aria-label="breadcrumb"]{
 
 .btn-wrap button + span{
 	margin: -10px 0 30px 0;
+}
+
+.oap-right .form-wrap input,
+.oap-right .box-input-form .form-group label,
+.oap-right button.btn-next-step{
+	margin-top: 30px;
 }
 
 
