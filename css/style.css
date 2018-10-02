@@ -7115,11 +7115,38 @@ nav[aria-label="breadcrumb"]{
 #oap-loan .btn-wrap{
 	margin-bottom: 60px;
 }
+
+#oap-loan-success .img-result{
+	margin-top: 60px;
+}
 .app-download{
-	padding-bottom: 105px;
+	padding-bottom: 60px;
+	margin: auto;
+}
+.app-download .media{
+	padding: 0 30px;
+}
+.app-download h5{
+	font-size: 18px;
+}
+.app-download p{
+	font-size: 22px;
+	line-height: 28px;
+	color: #CF3339;
+}
+.app-download span{
+	font-size: 14px;
 }
 .btn-app-download{
 	padding-top: 20px;
+}
+#oap-loan-success .proud-regis-complete .desc-result{
+	color: #5B6670;
+    font-size: 16px;
+}
+#oap-loan-success.bg-login .card-register-center {
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .oap-wrap{
