@@ -1388,4 +1388,22 @@
     padding-top: 230px;
   }
 
+  .oap-wrap > div,
+  .oap-wrap .oap-left{
+    width: 100%;
+    position: static;
+  }
+
+  .toggle-height-button{
+    display: none;
+  }
+
+  .toggle-height-screen{
+    height: auto;
+  }
+
+  .oap-wrap .only-mobile .desc-responsive h2 {
+    margin-top: 0;
+  }
+
 }
