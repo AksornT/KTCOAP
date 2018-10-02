@@ -566,6 +566,11 @@ $(document).ready(function() {
         $(this).next().val(filename).addClass('hasText');
     });
 
+    $('.toggle-height-button').on('click touch', function () {
+        $(this).toggleClass('less more');
+        $('.toggle-height-screen').toggleClass('height-auto');
+    });
+
 });
 
 //change header when scroll down.

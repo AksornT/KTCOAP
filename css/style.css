@@ -2548,10 +2548,10 @@ a.card-register-center, a.btn-action {
 }
 .content-title:after {
     height: 2px;
-    width: 50px;
+    width: 100px;
     background: #CF3339;
     position: absolute;
-    left: calc(50% - 25px);
+    left: calc(50% - 50px);
     content: "";
     top: 100%;
 }
@@ -7166,7 +7166,21 @@ nav[aria-label="breadcrumb"]{
 }
 
 .oap-wrap .box-login-con h3{
-	padding: 0;
+	padding: 0 0 2px 0;
+    border: none;
+    position: relative;
+}
+
+.oap-wrap .box-login-con h3:after{
+	width: 100px;
+	height: 2px;
+	content: "";
+	bottom: 0;
+	left: 50%;
+	margin-left: -50px;
+	position: absolute;
+	background: #CF3339;
+
 }
 
 .oap-wrap .box-login-con label,
@@ -7183,6 +7197,12 @@ nav[aria-label="breadcrumb"]{
 
 .oap-wrap .box-input-form span{
 	color: rgba(0,0,0,0.6);
+	font-size: 13px;
+    margin-top: 3px;
+}
+
+.oap-right .form-wrap.box-login-con span.select-arrow{
+	margin-top: -34px;
 }
 
 .red-notice{
@@ -7194,10 +7214,85 @@ nav[aria-label="breadcrumb"]{
 	margin: -10px 0 30px 0;
 }
 
-.oap-right .form-wrap input,
-.oap-right .box-input-form .form-group label,
+.oap-right .form-wrap input{
+	margin-top: 30px;
+}
 .oap-right button.btn-next-step{
 	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.oap-right .box-input-form .form-group label{
+	margin-top: 16px;
+    margin-bottom: -6px;
+}
+
+.oap-right .form-wrap input[type="text"] + label, 
+.oap-right .form-wrap input[type="password"] + label{
+	top: 30px;
+}
+
+.form-wrap input[type="text"]:focus + label, 
+.form-wrap input[type="text"].hasText + label, 
+.form-wrap input[type="text"].hasText:focus + label, 
+.form-wrap input[type="password"]:focus + label, 
+.form-wrap input[type="password"].hasText + label, 
+.form-wrap input[type="password"].hasText:focus + label{
+	top: 16px;
+}
+
+.toggle-height-screen{
+	height: calc(100vh - 115px);
+	overflow: hidden;
+	position: relative;
+}
+
+.toggle-height-screen.height-auto{
+	height: auto;
+}
+
+.toggle-height-button{
+	height: 75px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+    background: linear-gradient(rgba(246,246,247,0), rgba(246,246,247,0.5), rgba(246,246,247,1), rgba(246,246,247,1));
+}
+
+.toggle-height-button p{
+	width: 100%;
+	display: block;
+	line-height: 75px;
+	color: #5B6670;
+	font-size: 16px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+	text-align: center;
+}
+
+.oap-right{
+	position: fixed;
+}
+
+.toggle-height-button p i{
+	transform: rotate(0deg);
+	background: url('../img/ico-toggle-down.png') no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.less .text-more{
+	display: none;
+}
+
+.more .text-less{
+	display: none;
+}
+
+.toggle-height-button.more p i{
+	transform: rotate(180deg);
 }
 
 
