@@ -7685,14 +7685,13 @@ nav[aria-label="breadcrumb"]{
   /* oap loan success */
   .app-download .media{
 	padding: 0 60px;
+  }
   .oap-wrap > div{
   	width: 400px;
   }
-
   .oap-wrap .oap-left {
     width: calc(100% - 400px);
-}
-
   }
+
 
   }
