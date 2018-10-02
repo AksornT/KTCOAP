@@ -7232,6 +7232,7 @@ nav[aria-label="breadcrumb"]{
 .oap-wrap .box-login-con{
 	text-align: center;
 	padding-top: 30px;
+	max-width: 100%;
 }
 
 .oap-wrap .box-login-con h3{
@@ -7301,12 +7302,12 @@ nav[aria-label="breadcrumb"]{
 	top: 30px;
 }
 
-.form-wrap input[type="text"]:focus + label, 
-.form-wrap input[type="text"].hasText + label, 
-.form-wrap input[type="text"].hasText:focus + label, 
-.form-wrap input[type="password"]:focus + label, 
-.form-wrap input[type="password"].hasText + label, 
-.form-wrap input[type="password"].hasText:focus + label{
+.oap-right .form-wrap input[type="text"]:focus + label, 
+.oap-right .form-wrap input[type="text"].hasText + label, 
+.oap-right .form-wrap input[type="text"].hasText:focus + label, 
+.oap-right .form-wrap input[type="password"]:focus + label, 
+.oap-right .form-wrap input[type="password"].hasText + label, 
+.oap-right .form-wrap input[type="password"].hasText:focus + label{
 	top: 16px;
 }
 
@@ -7321,22 +7322,28 @@ nav[aria-label="breadcrumb"]{
 }
 
 .toggle-height-button{
-	height: 75px;
+	height: 80px;
 	position: absolute;
 	left: 0;
+	cursor: pointer;
 	bottom: 0;
 	width: 100%;
-    background: linear-gradient(rgba(246,246,247,0), rgba(246,246,247,0.5), rgba(246,246,247,1), rgba(246,246,247,1));
+    background: linear-gradient(rgba(246,246,247,0), rgba(246,246,247,0.75), rgba(246,246,247,1), rgba(246,246,247,1));
+}
+
+.toggle-height-button:hover{
+	cursor: pointer;
 }
 
 .toggle-height-button p{
 	width: 100%;
 	display: block;
-	line-height: 75px;
+	line-height: 1.4;
 	color: #5B6670;
 	font-size: 16px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	text-align: center;
+	margin-top: 35px;
 }
 
 .oap-right{
@@ -7678,6 +7685,14 @@ nav[aria-label="breadcrumb"]{
   /* oap loan success */
   .app-download .media{
 	padding: 0 60px;
+  .oap-wrap > div{
+  	width: 400px;
+  }
+
+  .oap-wrap .oap-left {
+    width: calc(100% - 400px);
+}
+
   }
 
   }

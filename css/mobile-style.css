@@ -1789,6 +1789,21 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       margin-top: 20px;
       margin-bottom: 40px;
     }
+    .oap-wrap{
+      background: none;
+    }
+
+    .oap-wrap .only-mobile .desc-responsive h2 {
+      margin-top: 40px;
+    }
+    .oap-wrap button#long-button.btn-next-step{
+      margin-top: 50px;
+    }
+
+    .oap-wrap .bg-login .content-wrap{
+      padding: 0 20px;
+    }
+
 
 
 }
