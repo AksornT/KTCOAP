@@ -7006,6 +7006,9 @@ nav[aria-label="breadcrumb"]{
 #oap-loan-cash .index-slide1 .item{
 	padding-top: 0;
 }
+#oap-loan-cash .index-slide1 .item img:hover{
+	top: auto;
+}
 #oap-loan-cash .owl-prev span,
 #oap-loan-cash .owl-next span{
 	display: none;
@@ -7027,6 +7030,9 @@ nav[aria-label="breadcrumb"]{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	font-size: 14px;
 	line-height: 20px;
+}
+.oap-content{
+	padding-bottom: 210px;
 }
 #oap-loan-cash .btn-wrap .card-register-center{
 	margin-bottom: 20px;
