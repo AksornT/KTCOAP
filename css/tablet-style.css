@@ -231,6 +231,9 @@
   .index-slide2 .owl-nav button.owl-next {
     top: 13.5vw;
   }
+  .oap .form-control{
+    font-size: 16px;
+  }
   .open-on-top h1{
     margin-top: 30px;
   }
@@ -1391,6 +1394,7 @@
   /* oap loan success */
   .oap-wrap .content-wrap{
     padding: 0 20px!important;
+    max-width: 600px;
   }
   .oap-success-wrap .content-wrap{
     padding: 0 20px!important;
@@ -1422,8 +1426,9 @@
   .oap-wrap > div,
   .oap-wrap .oap-left{
     width: 100%;
-    position: static;
-    padding-bottom: 40px;
+    position: relative;
+    padding-bottom: 60px;
+    top: auto;
   }
 
   .toggle-height-button{
@@ -1431,7 +1436,16 @@
   }
 
   .toggle-height-screen{
+    height: calc(100vh - 165px);
+    overflow: hidden;
+  }
+
+  .toggle-height-screen.height-auto{
     height: auto;
+  }
+
+  .toggle-height-mobile{
+    display: block;
   }
 
   .oap-wrap .only-mobile .desc-responsive h2 {
@@ -1447,6 +1461,10 @@
     margin-bottom: 0;
     font-size: 20px;
     line-height: 1.4;
+  }
+
+  .oap-wrap{
+    min-height: calc(100vh - 102px);
   }
 
 }

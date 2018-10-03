@@ -134,61 +134,25 @@
     <!-- start page -->
     <div class="bg-login">
       <div class="content-wrap oap">
-        <form action="oap-check-status-2.html" id="pg-regis" class="row box-login-con form-wrap">
-          <div class="index-head">
+        <form action="oap-check-status-3.html" id="pg-regis" class="row box-login-con form-wrap">
+           <div class="index-head">
             <h3>ตรวจสอบสถานะการสมัครบัตร</h3>
           </div>
-          <div id="type1" class="box-input-form">
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">เลือกประเภท</label>
-              <select class="form-control" id="exampleFormControlSelect1" >
-                <option class="select-item" id="idcardSelected" value="idcard">หมายเลขบัตรประชาชน</option>
-                <option class="select-item" >หมายเลขหนังสือเดินทาง</option>
-              </select>
-            </div>
-          
-           <div class="box-input-form" id="idcard" >
-            <input class="required" type="text" placeholder="หมายเลข 13 หลัก">
+          <div class="box-input-form txt-err-padd txt-desc-input">
+            <input class="required" type="text" placeholder="รหัส OTP ที่ได้รับทางโทรศัพท์มือถือ">
+            <p>รหัสอ้างอิง: KRTKRN</p>
+            <p>OTP สำหรับยืนยันหมายเลขโทรศัพท์จะถูกส่งไปที่หมายเลข 08-4165-3320</p>
           </div>
-          <div class="box-input-form" id="passpord">
-            <input class="required" type="text" placeholder="หมายเลขหนังสือเดินทาง">
+          <div class="box-other-form txt-desc-input">
+            <p>กรุณากด "ขอรหัส OTP อีกครั้ง" หากคุณยังไม่ได้รับรหัส OTP</p>
+            <a href="#"><img src="img/ico-refresh.png"><p>ขอรหัส OTP อีกครั้ง</p></a>
           </div>
-         
-          <div class="box-input-form txt-err-padd only-this page">
-            <input type="text" placeholder="หมายเลขโทรศัพท์มือถือ 10 หลัก ที่ให้ไว้กับ KTC" class="err-message required">
+          <div>
+            <button type="submit" class="btn-next-step" value="" >ถัดไป</button>
           </div>
 
-           <!-- ขึ้นยอมรับ -->
-          <div class="box-other-form">
-             <button class="btn-next-step" id="long-button" type="submit" >ถัดไป</button>
-          </div>
-        </div>
-          <!-- จบ div ที่ใช้จำลอง -->    <!-- จบบุคคลธรรมดา -->
 
-          <!-- ร้านนค้านะ -->
-
-          <div id="type2" class="box-input-form">
-          <div class="box-input-form">
-            <input class="required" type="text" placeholder="หมายเลขประจำตัวผู้เสียภาษีอากร">
-          </div>
-          <div class="box-input-form txt-err-padd">
-            <input type="text" placeholder="หมายเลขโทรศัพท์มือถือ 10 หลัก ที่ให้ไว้กับ KTC" class="err-message required">
-          </div>
-       
-          <!-- ขึ้นยอมรับ -->
-            <div class="box-other-form checkbox-form">
-              <label>ยอมรับ
-                <input class="required" id="check2" type="checkbox" name="" value="">
-                <span class="checkmark"></span>
-              </label>
-              <a class="link-regis" data-toggle="modal" data-target="#condition-modal">ข้อตกลงและเงื่อนไข</a>
-            </div>
-            <div>
-              <button class="btn-next-step" id="long-button" type="submit" >ถัดไป</button>
-            </div> 
-          </div>
-
-          <div class="app-download-oap">
+         <div class="app-download-oap">
             <div class="app-download">
               <div class="media">
                 <img src="img/ico-logo-tapktc.png">
@@ -211,66 +175,10 @@
 
       
 
-        </form>      
+        </form>
       </div>
     </div>
     <!-- end page -->
-
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $('.form-wrap button[type="submit"]').prop('disabled', true);
-      var toValidate1 = jQuery('.form-wrap #type1 input[type="text"].required,.form-wrap #type1 input[type="password"].required');
-      var toValidate2 = jQuery('.form-wrap #type2 input[type="text"].required,.form-wrap #type2 input[type="password"].required');
-
-    toValidate1.on('keyup', function () {
-        if (jQuery(this).val().length > 0) {
-            jQuery(this).data('valid', true);
-            console.log("filled");
-        } else{
-            jQuery(this).data('valid', false);
-            console.log("notFilled");
-        }
-        toValidate1.each(function () {
-            if (jQuery(this).data('valid') == true) {
-                valid = true;
-            } else {
-                valid = false;
-            }
-        });
-        if (valid === true || valid2 === true) {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
-        } else {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
-        }
-     });
-
-    toValidate2.on('keyup', function () {
-        if (jQuery(this).val().length > 0) {
-            jQuery(this).data('valid', true);
-            console.log("filled");
-        } else{
-            jQuery(this).data('valid', false);
-            console.log("notFilled");
-        }
-        toValidate2.each(function () {
-            if (jQuery(this).data('valid') == true) {
-                valid = true;
-            } else {
-                valid = false;
-            }
-        });
-        if (valid === true || valid2 === true) {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
-        } else {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
-        }
-    });
-  });
-
-      
-
-    </script>
-    
 
   <!-- start Footer -->
   <div id="footer-login-form" class="footer">
@@ -468,7 +376,6 @@
                 </div>
               </div>
             </div>
-            </form>
           </div>
         </div>
       </div>
