@@ -7125,6 +7125,9 @@ nav[aria-label="breadcrumb"]{
 .app-download .media{
 	padding: 0 130px;
 }
+.app-download .media-body{
+	padding-top: 4px;
+}
 .app-download h5{
 	font-size: 18px;
 }
@@ -7134,12 +7137,16 @@ nav[aria-label="breadcrumb"]{
 	color: #CF3339;
 	padding-bottom: 0;
 }
-.app-download span{
+.app-download .btn-app-download p{
 	color: #000;
 	font-size: 14px;
+	padding-bottom: 6px;
 }
 .btn-app-download{
-	padding-top: 20px;
+	padding-top: 0px;
+}
+.btn-app-download img{
+	margin: auto 6px;
 }
 #oap-loan-success .proud-regis-complete .desc-title{
 	font-family: 'Conv_SukhumvitTadmai_Bol';

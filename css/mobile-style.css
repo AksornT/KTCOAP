@@ -1788,7 +1788,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       line-height: 20px;
       padding-bottom: 0px;
     }
-    .app-download span{
+    .app-download .btn-app-download p{
       font-size: 10px;
     }
     #oap-loan-success.bg-login .card-register-center {

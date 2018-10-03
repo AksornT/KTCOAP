@@ -1412,7 +1412,7 @@
     margin-top: 3px;
     padding-bottom: 0;
   }
-  .app-download span{
+  .app-download .btn-app-download p{
     font-size: 14px;
   }
   .app-download .media {
