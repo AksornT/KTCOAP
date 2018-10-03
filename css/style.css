@@ -7481,7 +7481,7 @@ nav[aria-label="breadcrumb"]{
 
 .toggle-height-mobile{
 	display: none;
-	height: 40px;
+	height: 56px;
 	position: absolute;
 	left: 0;
 	cursor: pointer;
@@ -7495,7 +7495,8 @@ nav[aria-label="breadcrumb"]{
 	cursor: pointer;
 }
 
-.toggle-height-button p{
+.toggle-height-button p,
+.toggle-height-mobile p{
 	width: 100%;
 	display: block;
 	line-height: 1.4;
@@ -7504,6 +7505,10 @@ nav[aria-label="breadcrumb"]{
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 	text-align: center;
 	margin-top: 35px;
+}
+
+.toggle-height-mobile p{
+	margin-top: 18px;
 }
 
 .oap-right{
@@ -7540,8 +7545,14 @@ nav[aria-label="breadcrumb"]{
 	display: none;
 }
 
-.toggle-height-button.more p i{
+.toggle-height-button.more p i,
+.toggle-height-mobile.more p i{
 	transform: rotate(180deg);
+}
+
+.oap-left .content-title{
+	font-size: 20px;
+	line-height: 1.4;
 }
 
 
