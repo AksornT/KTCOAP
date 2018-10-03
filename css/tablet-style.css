@@ -1393,7 +1393,7 @@
     padding: 0 20px!important;
   }
   .oap-success-wrap .content-wrap{
-    padding: 0 20px;
+    padding: 0 20px!important;
   }
   .oap-top-padd{
     padding-top: 60px;
