@@ -7236,7 +7236,8 @@ nav[aria-label="breadcrumb"]{
 .oap-wrap .box-login-con{
 	text-align: center;
 	padding-top: 30px;
-	max-width: 100%;
+	width: 100%;
+	margin: 0;
 }
 
 .oap-wrap .box-login-con h3{
@@ -7261,6 +7262,7 @@ nav[aria-label="breadcrumb"]{
 .oap-wrap .box-login-con span{
 	text-align: left;
 	display: block;
+	margin: 0 0 30px 0;
 }
 
 .oap-wrap .box-login-con .sub-head{
@@ -7335,7 +7337,19 @@ nav[aria-label="breadcrumb"]{
     background: linear-gradient(rgba(246,246,247,0), rgba(246,246,247,0.75), rgba(246,246,247,1), rgba(246,246,247,1));
 }
 
-.toggle-height-button:hover{
+.toggle-height-mobile{
+	display: none;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	cursor: pointer;
+	bottom: 0;
+	width: 100%;
+    background: linear-gradient(rgba(246,246,247,0), rgba(246,246,247,0.75), rgba(246,246,247,1), rgba(246,246,247,1));
+}
+
+.toggle-height-button:hover,
+.toggle-height-mobile:hover{
 	cursor: pointer;
 }
 
@@ -7353,10 +7367,21 @@ nav[aria-label="breadcrumb"]{
 .oap-right{
 	position: fixed;
 	background: #fff url('../img/bg-oap-right.png') no-repeat;
-	background-size: 100% 600px;
+	background-size: 100% 400px;
+	top: 66px;
+	bottom: 0;
+	padding-bottom: 15px;
+	overflow: auto;
 }
 
-.toggle-height-button p i{
+.form-notice{
+	margin: 30px 0 0 0;
+	text-align: left;
+	font-size: 14px;
+}
+
+.toggle-height-button p i,
+.toggle-height-mobile p i{
 	transform: rotate(0deg);
 	background: url('../img/ico-toggle-down.png') no-repeat;
 	width: 20px;
