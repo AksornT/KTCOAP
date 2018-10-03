@@ -1409,6 +1409,7 @@
   .oap-wrap .oap-left{
     width: 100%;
     position: static;
+    padding-bottom: 40px;
   }
 
   .toggle-height-button{
@@ -1421,6 +1422,17 @@
 
   .oap-wrap .only-mobile .desc-responsive h2 {
     margin-top: 0;
+  }
+
+  .oap-wrap .content-wrap .box-login-con{
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  .oap-wrap .content-title{
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1.4;
   }
 
 }

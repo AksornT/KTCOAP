@@ -1804,6 +1804,14 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       padding: 0 20px;
     }
 
+    .oap-right #pg-regis.form-wrap input[type="text"]:focus + label, 
+    .oap-right #pg-regis.form-wrap input[type="text"].hasText + label, 
+    .oap-right #pg-regis.form-wrap input[type="text"].hasText:focus + label, 
+    .oap-right #pg-regis.form-wrap input[type="password"]:focus + label, 
+    .oap-right #pg-regis.form-wrap input[type="password"].hasText + label, 
+    .oap-right #pg-regis.form-wrap input[type="password"].hasText:focus + label{
+      font-size: 12px;
+    }
 
 
 }
