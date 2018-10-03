@@ -568,6 +568,10 @@
     margin-top: 40px;
     border-bottom: 3px solid #CF3339;
   }
+
+  .oap .index-head{
+    margin-top: 35px;
+  }
   .text-on-slide{
     margin-top: 12px;
     margin-bottom: 0;
@@ -916,31 +920,73 @@
   .row.box-radio.disabled{
     padding-bottom: 10px;
   }
-  
+
+  .oap .app-download{
+    padding-bottom: 10px;
+  }
+
+  .oap .box-input-form{
+    margin-top: 0px;
+  }
+  .oap .only-na button.btn-next-step{
+    margin: 40px;
+  }
+  .oap button.btn-next-step{
+    width: 100%;
+    margin:40px 0px;
+  }
+
   .box-login-con{
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
-  .content-wrap .box-login-con{
+  .oap .app-download .media > img{
+    width: 40px;
+  }
+  .oap .box-input-form.only-na{
+    margin-top: 25px;
+  }
+
+  .oap .box-login-con{
+    padding-top: 0px;
+  }
+
+  ./*content-wrap .box-login-con{
     padding-top: 8vh;
     padding-bottom: 3vh;
   }
+*/
+  .bg-login #oap-1 .row{
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+  }    
 
 
   .bg-login .img-result{
     margin-bottom: 30px;
     width:84px;
   }
-
+  .oap .mr-3{
+    width:90px;
+  }
   .proud-regis-complete p, .form-register-completed p{
     font-size: 24px;
     padding-bottom: 20px;
     margin-top: 0px;
   }
+  .oap .app-download .media{
+    margin-bottom: 0px;
+  }
 
-  
+  .oap .app-download .btn-app-download{
+    margin-top: 5px;
+  }
+
+  .oap button.btn-next-step.only-oap{
+   width:100%;
+  }
   .bg-login .content-wrap{
     padding: 0 40px;
   }
@@ -975,12 +1021,31 @@
     width:100%;
     margin-top: 100px;
   }
+
+  .oap button#long-button.btn-next-step{
+    width:100%;
+    margin-top: 40px;
+  }
   #pg-regis.form-wrap input[type="text"] + label, #pg-regis.form-wrap input[type="password"] + label{
     font-size: 15px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
+  }
+
+  .oap #pg-regis.form-wrap input[type="text"] + label,.oap #pg-regis.form-wrap input[type="password"] + label{
+    font-size: 12px;
+  }
+
+  .oap .form-control{
+    font-size: 14px;
+  }
+
+
+
+  .oap .box-input-form .form-group label{
+    margin-top: 25px;
   }
 
  
@@ -1788,7 +1853,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       line-height: 20px;
       padding-bottom: 0px;
     }
-    .app-download span{
+    .app-download .btn-app-download p{
       font-size: 10px;
     }
     #oap-loan-success.bg-login .card-register-center {
