@@ -233,59 +233,47 @@
     <!-- start page -->
     <div class="bg-login">
       <div class="content-wrap oap">
-        <form action="oap-check-status-2.html" id="pg-regis" class="row box-login-con form-wrap">
-          <div class="index-head">
-            <h3>ตรวจสอบสถานะการสมัครบัตร</h3>
+        <form action="oap-check-status-3.html" id="pg-regis" class="row box-login-con form-wrap">
+           <div class="index-head">
+            <h3>สถานะการสมัครบัตร</h3>
           </div>
-          <div id="type1" class="box-input-form">
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">เลือกประเภท</label>
-              <select class="form-control" id="exampleFormControlSelect1" >
-                <option class="select-item" id="idcardSelected" value="idcard">หมายเลขบัตรประชาชน</option>
-                <option class="select-item" >หมายเลขหนังสือเดินทาง</option>
-              </select>
+          <div id=make-it-center>
+            <div class="box-input-form txt-err-padd txt-desc-input">
+              <div class="left-box line-verticle">
+                  <div class="number-circle gray">
+                    <span>1</span>
+                  </div>
+                  <div id="pass-state">
+                    <p class="left-bold">KTC ได้รับเอกสารการสมัครแล้ว</p>
+                    <p class="left-thin">วันที่ 9 ก.ย. 2561 เวลา 10.30 น.</p>
+                  </div>
+              </div>
+                <div class="left-box line-verticle">
+                  <div class="number-circle red">
+                    <span>2</span>
+                  </div>
+                  <div id="pass-state">
+                    <p class="left-bold">อยู่ระหว่างการพิจารณาการสมัคร</p>
+                    <p class="left-thin">วันที่ 14 ก.ย. 2561 เวลา 13.00 น.<br>
+                   สถานะ: ขอเอกสารเพิ่มเติม</p>
+                  </div>
+                </div>
+              
+                <div class="left-box line-verticle">
+                  <div class="number-circle white">
+                    <span>3</span>
+                  </div>
+                  <div id="pass-state">
+                    <p class="left-bold">ผลการพิจารณา:  -</p>
+                    <p class="left-thin">วันที่ 31 ต.ค. 2561 เวลา 20.00 น.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          
-           <div class="box-input-form" id="idcard" >
-            <input class="required" type="text" placeholder="หมายเลข 13 หลัก">
-          </div>
-          <div class="box-input-form" id="passpord">
-            <input class="required" type="text" placeholder="หมายเลขหนังสือเดินทาง">
-          </div>
-         
-          <div class="box-input-form txt-err-padd">
-            <input type="text" placeholder="หมายเลขโทรศัพท์มือถือ 10 หลัก ที่ให้ไว้กับ KTC" class="err-message required">
+          <div>
+            <button  class="btn-next-step only-oap" >กลับสู่หน้าหลัก</button>
           </div>
 
-           <!-- ขึ้นยอมรับ -->
-          <div class="box-other-form">
-             <button class="btn-next-step" id="long-button" type="submit" >ถัดไป</button>
-          </div>
-        </div>
-          <!-- จบ div ที่ใช้จำลอง -->    <!-- จบบุคคลธรรมดา -->
-
-          <!-- ร้านนค้านะ -->
-
-          <div id="type2" class="box-input-form">
-          <div class="box-input-form">
-            <input class="required" type="text" placeholder="หมายเลขประจำตัวผู้เสียภาษีอากร">
-          </div>
-          <div class="box-input-form txt-err-padd">
-            <input type="text" placeholder="หมายเลขโทรศัพท์มือถือ 10 หลัก ที่ให้ไว้กับ KTC" class="err-message required">
-          </div>
-       
-          <!-- ขึ้นยอมรับ -->
-            <div class="box-other-form checkbox-form">
-              <label>ยอมรับ
-                <input class="required" id="check2" type="checkbox" name="" value="">
-                <span class="checkmark"></span>
-              </label>
-              <a class="link-regis" data-toggle="modal" data-target="#condition-modal">ข้อตกลงและเงื่อนไข</a>
-            </div>
-            <div>
-              <button class="btn-next-step" id="long-button" type="submit" >ถัดไป</button>
-            </div> 
-          </div>
 
           <div class="app-download">
             <div class="media">
@@ -307,66 +295,10 @@
          </div>
       
 
-        </form>      
+        </form>
       </div>
     </div>
     <!-- end page -->
-
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $('.form-wrap button[type="submit"]').prop('disabled', true);
-      var toValidate1 = jQuery('.form-wrap #type1 input[type="text"].required,.form-wrap #type1 input[type="password"].required');
-      var toValidate2 = jQuery('.form-wrap #type2 input[type="text"].required,.form-wrap #type2 input[type="password"].required');
-
-    toValidate1.on('keyup', function () {
-        if (jQuery(this).val().length > 0) {
-            jQuery(this).data('valid', true);
-            console.log("filled");
-        } else{
-            jQuery(this).data('valid', false);
-            console.log("notFilled");
-        }
-        toValidate1.each(function () {
-            if (jQuery(this).data('valid') == true) {
-                valid = true;
-            } else {
-                valid = false;
-            }
-        });
-        if (valid === true || valid2 === true) {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
-        } else {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
-        }
-     });
-
-    toValidate2.on('keyup', function () {
-        if (jQuery(this).val().length > 0) {
-            jQuery(this).data('valid', true);
-            console.log("filled");
-        } else{
-            jQuery(this).data('valid', false);
-            console.log("notFilled");
-        }
-        toValidate2.each(function () {
-            if (jQuery(this).data('valid') == true) {
-                valid = true;
-            } else {
-                valid = false;
-            }
-        });
-        if (valid === true || valid2 === true) {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
-        } else {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
-        }
-    });
-  });
-
-      
-
-    </script>
-    
 
   <!-- start Footer -->
   <div id="footer-login-form" class="footer">
@@ -564,7 +496,6 @@
                 </div>
               </div>
             </div>
-            </form>
           </div>
         </div>
       </div>
