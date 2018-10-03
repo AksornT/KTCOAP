@@ -7132,6 +7132,7 @@ nav[aria-label="breadcrumb"]{
 	font-size: 22px;
 	line-height: 28px;
 	color: #CF3339;
+	padding-bottom: 0;
 }
 .app-download span{
 	color: #000;
@@ -7149,7 +7150,8 @@ nav[aria-label="breadcrumb"]{
 #oap-loan-success .proud-regis-complete .desc-title span{
     font-size: 20px;
     display: block;
-    padding: 6px 0;
+    padding: 10px 0 4px 0;
+    line-height: 28px;
 }
 #oap-loan-success .proud-regis-complete .desc-result{
 	color: #5B6670;
