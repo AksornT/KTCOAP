@@ -3988,7 +3988,7 @@ section#section-flexi-cards {
 }
 
 .oap .app-download .media{
-	padding:0 55px;
+	padding:0 ;
 }
 
 .oap .media div{
@@ -4014,6 +4014,7 @@ section#section-flexi-cards {
 }
 .oap .app-download{
 	text-align: center;
+	display: inline-block;
 }
 .oap .app-download .media > *{
 	display: inline-block;
@@ -4024,8 +4025,11 @@ section#section-flexi-cards {
 	margin-bottom: 6px;
 }
 .oap .app-download .btn-app-download{
-	padding:0 40px;
+	padding:0;
 	margin-top: 20px;
+}
+.oap .app-download-oap{
+	text-align: center;
 }
 .oap button.btn-next-step{
 	margin-bottom: 60px;
@@ -4272,6 +4276,14 @@ button.btn-default:disabled:hover{
 	margin-bottom: 0;
 }
 .oap .box-input-form{
+	/*margin-top: 45px ;*/
+    font-size: 14px;
+    line-height: 18px;
+    /*display: inline-block;*/
+}
+
+
+.oap .box-input-form.only-na{
 	margin-top: 45px ;
 	font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 14px;
@@ -4429,15 +4441,17 @@ button.btn-next-step{
 	font-size: 12px;
   line-height: 21px;
 }
-
+.oap .txt-desc-input.only-na p{
+	font-size: 14px;
+}
 
 .oap .txt-desc-input p{
-	font-size: 14px;
+	font-size: 12px;
 }
 .oap button.btn-next-step.only-oap{
 	margin-right: auto;
 	margin-left: auto;
-	width: 225px;
+	width: 237px;
 	display: block;
 }
 
