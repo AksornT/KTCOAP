@@ -4026,7 +4026,7 @@ section#section-flexi-cards {
 }
 .oap .app-download .btn-app-download{
 	padding:0;
-	margin-top: 20px;
+	margin-top: 0px;
 }
 .oap .app-download-oap{
 	text-align: center;
@@ -4037,6 +4037,8 @@ section#section-flexi-cards {
 
 .oap .app-download span{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
+	padding-bottom: 6px;
+	font-size: 14px;
 }
 
 .oap .index-head{
