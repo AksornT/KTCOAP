@@ -1389,8 +1389,17 @@
   }
 
   /* oap loan success */
+  .oap-wrap .content-wrap{
+    padding: 0 20px;
+  }
+  .oap-success-wrap .content-wrap{
+    padding: 0 20px;
+  }
   .oap-top-padd{
     padding-top: 60px;
+  }
+  .oap-wrap .oap-left{
+    padding-bottom: 60px;
   }
   #oap-loan-success .proud-regis-complete .desc-title{
     font-size: 28px;
