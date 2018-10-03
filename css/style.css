@@ -7295,7 +7295,7 @@ nav[aria-label="breadcrumb"]{
 }
 
 .oap-wrap{
-	display: block;
+	display: flex;
 	margin: 0 auto;
 	background: none;
 	font-size: 0;
@@ -7503,6 +7503,7 @@ nav[aria-label="breadcrumb"]{
 	background-size: 100% 400px;
 	top: 66px;
 	bottom: 0;
+	right: 0;
 	padding-bottom: 15px;
 	overflow: auto;
 }
