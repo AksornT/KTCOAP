@@ -1764,7 +1764,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
     }
 
     /* oap loan success */
-    .oap-wrap .content-wrap{
+    .oap-success-wrap .content-wrap{
       padding: 0 20px;
     }
     #oap-loan-success .proud-regis-complete .desc-title{
