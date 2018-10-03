@@ -566,8 +566,11 @@ $(document).ready(function() {
         $(this).next().val(filename).addClass('hasText');
     });
 
-    $('.toggle-height-button').on('click touch', function () {
-        $(this).toggleClass('less more');
+    //OAP toggle-height
+
+    $('.toggle-height-button, .toggle-height-mobile').on('click touch', function () {
+        $('.toggle-height-button').toggleClass('less more');
+        $('.toggle-height-mobile').toggleClass('less more');
         $('.toggle-height-screen').toggleClass('height-auto');
     });
 
