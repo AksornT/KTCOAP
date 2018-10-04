@@ -1900,5 +1900,9 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       height: 400px;
     }
 
+    .oap-wrap .box-login-con .sub-head{
+      font-size: 14px;
+    }
+
 
 }
