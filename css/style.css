@@ -1094,6 +1094,9 @@ button:focus {
 	border: none;
 	position: relative;
 	z-index: 1;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding: 12px 15px 9px 15px;
 }
 
 .license{
@@ -1101,6 +1104,11 @@ button:focus {
 	font-size: 12px;
 	line-height: 14px;
 	padding-top: 12px;
+}
+
+.oap-footer .license{
+	padding-top: 0;
+	align-self: center;
 }
 
 .text-right{
@@ -7392,7 +7400,8 @@ nav[aria-label="breadcrumb"]{
 }
 
 .oap-wrap #header-card-detail .header-title{
-	font-size: 22px;
+    font-size: 24px;
+    margin-top: -32px;
 }
 
 .oap-wrap .page-merchant-inner-header h2{
@@ -7439,6 +7448,7 @@ nav[aria-label="breadcrumb"]{
 	padding-top: 30px;
 	width: 100%;
 	margin: 0;
+	overflow: visible;
 }
 
 .oap-wrap .box-login-con h3{
@@ -7502,6 +7512,9 @@ nav[aria-label="breadcrumb"]{
 .oap-right .box-input-form .form-group label{
 	margin-top: 16px;
     margin-bottom: -6px;
+    z-index: 1;
+    position: relative;
+    font-size: 14px;
 }
 
 .oap-right .form-wrap input[type="text"] + label, 
@@ -7614,6 +7627,41 @@ nav[aria-label="breadcrumb"]{
 	font-size: 20px;
 	line-height: 1.4;
 }
+
+/* new dropdown*/
+.oap-right .form-wrap input.custom-dropdown{
+	margin-top: 2px;
+}
+
+.oap-right .box-input-form .form-group .custom-dropdown + ul{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #fff;
+    top: 46px;
+    text-align: left;
+    padding: 0;
+    display: none;
+    box-shadow: 0px 1px 4px rgba(0,0,0,.16);
+}
+
+.oap-right .box-input-form .form-group .custom-dropdown + ul.active{
+	display: block;
+}
+
+.oap-right .box-input-form .form-group .custom-dropdown + ul li{
+	padding: 5px 15px;
+}
+
+.oap-right .box-input-form .form-group .custom-dropdown + ul li:hover,
+.oap-right .box-input-form .form-group .custom-dropdown + ul li.active{
+	background: #ededed;
+	cursor: pointer;
+}
+
+.oap-wrap .form-wrap select.form-control{
+  	display: none;
+ }
 
 
 /*Safari Only*/
@@ -7924,6 +7972,13 @@ nav[aria-label="breadcrumb"]{
 
   #section-flexi-promotions .slide-flexi-promotions{
   	padding: 0 55px;
+  }
+
+  .oap-wrap .form-wrap .custom-dropdown{
+  	display: none;
+  }
+  .oap-wrap .form-wrap select.form-control{
+  	display: block;
   }
 
   /* oap loan success */
