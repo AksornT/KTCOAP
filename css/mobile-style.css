@@ -910,7 +910,7 @@
   .bg-login {
     background: url(../img/bg-login.png) no-repeat;
     background-size: 100% 100%;
-    min-height: calc(100vh - 82px);
+    min-height: calc(100vh - 81px);
 }
 
   .on-right.header-login-pg p{
@@ -1834,7 +1834,12 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       overflow: hidden;
     }
     .oap-content .left-title{
-      line-height: 32px;
+      line-height: 18px;
+      font-size: 14px;
+    }
+    .oap-content .left-desc {
+      font-size: 10px;
+      line-height: 14px;
     }
     #oap-loan-success .proud-regis-complete .desc-title{
       font-size: 20px;
@@ -1845,6 +1850,12 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       font-size: 14px;
       line-height: 20px;
       padding-bottom: 0;
+    }
+    .txt-on-desktop{
+      display: none;
+    }
+    .txt-on-mobile{
+      display: inline-block;
     }
     .app-download .app-download-box .media img{
       width: 48px;
