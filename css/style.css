@@ -7397,6 +7397,7 @@ nav[aria-label="breadcrumb"]{
 
 .oap-wrap .proud-head img{
 	height: 160px;
+	box-shadow: 0px 4px 10px rgba(0,0,0,.16);
 }
 
 .oap-wrap #header-card-detail .header-title{
@@ -7473,7 +7474,6 @@ nav[aria-label="breadcrumb"]{
 	margin-left: -50px;
 	position: absolute;
 	background: #CF3339;
-
 }
 
 .oap-wrap .box-login-con label,
