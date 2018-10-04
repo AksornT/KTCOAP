@@ -1869,11 +1869,7 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       font-size: 16px;
       line-height: 20px;
     }
-    .oap-top-padd{
-      padding-top: 40px!important;
-    }
     #oap-loan-success .img-result {
-      margin-top: 40px;
       margin-bottom: 20px;
     }
 
