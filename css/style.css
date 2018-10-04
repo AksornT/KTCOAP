@@ -4310,34 +4310,63 @@ button.btn-default:disabled:hover{
   height: 30px;
   width: 30px;
   border:1px solid #BDC2C6;
-  background-color: #fff;
+  background-color: #BDC2C6;
   border-radius: 50%;
   display: inline-block;
   margin-right:20px;
   text-align: center;
   line-height: 30px;
+  color: white;
 }
 
 .oap #pass-state{
 	margin-top:3px;
 }
 
-.oap .number-circle.red{
-  background-color: #CF3339;
+.oap .active .number-circle{
+   background-color: #CF3339;
    border:1px solid #CF3339;
+}
+
+.oap .box-other-form.txt-desc-input a{
+	font-family: 'Conv_SukhumvitTadmai_Bol';
+    font-size: 16px;
+    text-decoration: underline;
+    color: #CF3339;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.oap .box-other-form.txt-desc-input p#inline-ei-ei{
+	display: inline;
+	padding-right: 8px;
+}
+
+.oap .box-other-form.txt-desc-input a img{
+	text-align: center;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+
+.oap #pass-state p.disable{
+	display: none;
 }
 
 .oap .number-circle span{
 	color:#fff;
 }
 
-.oap .number-circle.white span{
-	color:#BDC2C6;
+.oap .active + div .number-circle,
+.oap .active + div + div .number-circle,
+.oap .active + div + div + div .number-circle,
+.oap .active + div + div + div + div .number-circle{
+   background-color: #fff;
+   border:1px solid #BDC2C6;
+   color: #BDC2C6;
 }
 
-.oap .number-circle.gray{
-  background-color: #BDC2C6;
-}
+
 
 /*width+height เท่ากัน แล้ว กำหนด 50% border-radius*/
 
