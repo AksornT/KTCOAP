@@ -581,6 +581,8 @@ $(document).ready(function() {
       $(this).parent().siblings('.custom-option').append('<li value="' + $(this).val() + '">'+$(this).text()+'</li>');
     });
 
+    $('.custom-option > li:nth-child(1)').addClass('active');
+
     $(".custom-dropdown").on('click touch', function () {
         $(this).siblings('ul').addClass('active');
         $("body").on('click touch', function () {
