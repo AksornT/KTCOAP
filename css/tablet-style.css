@@ -234,6 +234,9 @@
   .oap .form-control{
     font-size: 16px;
   }
+  .oap .form-wrap select.form-control{
+    font-size: 16px;
+  }
   .open-on-top h1{
     margin-top: 30px;
   }
