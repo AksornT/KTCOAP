@@ -7330,7 +7330,13 @@ nav[aria-label="breadcrumb"]{
 }
 .btn-app-download img{
 	margin: auto 6px;
+	top: 0;
 }
+.btn-app-download img:hover{
+	top:-3px;
+	position: relative;
+}
+
 #oap-loan-success .proud-regis-complete .desc-title{
 	font-family: 'Conv_SukhumvitTadmai_Bol';
 	font-size: 30px;
