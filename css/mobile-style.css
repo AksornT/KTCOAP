@@ -1895,5 +1895,9 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       font-size: 12px;
     }
 
+    .toggle-height-screen {
+      height: 400px;
+    }
+
 
 }

@@ -1436,7 +1436,7 @@
   }
 
   .toggle-height-screen{
-    height: calc(100vh - 165px);
+    height: 370px;
     overflow: hidden;
   }
 
@@ -1466,6 +1466,19 @@
   .oap-wrap{
     min-height: calc(100vh - 102px);
     display: block;
+  }
+
+  .oap-footer.last-piece{
+    padding: 5px 15px;
+  }
+
+  .oap-footer.last-piece.for-login-pg .text-right{
+    display: inline-block;
+    padding:0 15px;
+  }
+
+  .oap-footer.last-piece.for-login-pg .license{
+    padding:0 15px;
   }
 
 }
