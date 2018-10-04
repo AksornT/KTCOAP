@@ -7206,10 +7206,14 @@ nav[aria-label="breadcrumb"]{
 	top: calc(50% - 11px);
 }
 
-/* oap loan cash */
+/* oap loan */
 .bg-left-section{
 	background-color: #F6F6F7;
 	background-size: cover;
+}
+#oap-loan .toggle-height-screen{
+    height: auto;
+    overflow: auto;
 }
 #oap-loan .item img{
 	width: 100%;

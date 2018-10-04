@@ -1391,7 +1391,18 @@
     padding-top: 230px;
   }
 
-  /* oap loan success */
+  /* oap loan */
+  #oap-loan-success.bg-login {
+    background: url(../img/bg-oap-right.png);
+    background-size: 100% 100%;
+  }
+  #oap-loan .toggle-height-screen{
+    height: 78vw;
+    overflow: hidden;
+  }
+  #oap-loan .toggle-height-screen.height-auto{
+    height: auto;
+  }
   .oap-wrap .content-wrap{
     padding: 0 20px!important;
     max-width: 600px;

@@ -1828,7 +1828,11 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       padding-top: 200px;
     }
 
-    /* oap loan success */
+    /* oap loan */
+    #oap-loan .toggle-height-screen {
+      height: 90vw;
+      overflow: hidden;
+    }
     .oap-content .left-title{
       line-height: 32px;
     }
