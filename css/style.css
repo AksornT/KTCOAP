@@ -7400,10 +7400,17 @@ nav[aria-label="breadcrumb"]{
 
 .oap-wrap .page-merchant-inner-header h2{
 	font-size: 16px;
+	text-align: center;
 }
 
 .oap-wrap #header-card-detail .content-desc h2{
 	font-size: 22px;
+}
+
+.oap-wrap #header-card-detail .content-desc > div > div:nth-child(1) h2{
+	font-size: 30px;
+    margin-top: 2px;
+    margin-bottom: -5px;
 }
 
 .oap-wrap #header-card-detail .content-desc h3{
@@ -7622,9 +7629,18 @@ nav[aria-label="breadcrumb"]{
 	line-height: 1.4;
 }
 
+.oap-left #header-card-detail .header-desc{
+	margin-top: 14px;
+}
+
 /* new dropdown*/
 .oap-right .form-wrap input.custom-dropdown{
 	margin-top: 2px;
+	cursor: pointer;
+}
+
+.oap-right .form-wrap input.custom-dropdown:hover{
+	cursor: pointer;
 }
 
 .oap-right .box-input-form .form-group .custom-dropdown + ul{
