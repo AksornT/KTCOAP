@@ -1828,7 +1828,11 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       padding-top: 200px;
     }
 
-    /* oap loan success */
+    /* oap loan */
+    #oap-loan .toggle-height-screen {
+      height: 90vw;
+      overflow: hidden;
+    }
     .oap-content .left-title{
       line-height: 32px;
     }
@@ -1842,15 +1846,16 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       line-height: 20px;
       padding-bottom: 0;
     }
-    .app-download .media {
-      padding: 0 25px;
+    .app-download .app-download-box .media img{
+      width: 48px;
     }
     .app-download h5{
-      font-size: 14px;
+      font-size: 16px;
+      line-height: 21px;
     }
     .app-download p{
-      font-size: 17px;
-      line-height: 20px;
+      font-size: 20px;
+      line-height: 24px;
       padding-bottom: 0px;
     }
     .app-download .btn-app-download p{

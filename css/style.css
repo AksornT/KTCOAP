@@ -7235,10 +7235,14 @@ nav[aria-label="breadcrumb"]{
 	top: calc(50% - 11px);
 }
 
-/* oap loan cash */
+/* oap loan */
 .bg-left-section{
 	background-color: #F6F6F7;
 	background-size: cover;
+}
+#oap-loan .toggle-height-screen{
+    height: auto;
+    overflow: auto;
 }
 #oap-loan .item img{
 	width: 100%;
@@ -7295,17 +7299,23 @@ nav[aria-label="breadcrumb"]{
 	padding-bottom: 60px;
 	margin: auto;
 }
-.app-download .media{
-	padding: 0 130px;
+.app-download .app-download-box{
+	text-align: center;
+	display: inline-block;
+}
+.app-download .app-download-box .media img{
+	margin-right: 15px;
 }
 .app-download .media-body{
-	padding-top: 4px;
+	font-family: 'Conv_SukhumvitTadmai_Bol';
 }
 .app-download h5{
-	font-size: 18px;
+	font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 4px;
 }
 .app-download p{
-	font-size: 22px;
+	font-size: 25px;
 	line-height: 28px;
 	color: #CF3339;
 	padding-bottom: 0;
@@ -7906,9 +7916,6 @@ nav[aria-label="breadcrumb"]{
   }
 
   /* oap loan success */
-  .app-download .media{
-	padding: 0 60px;
-  }
   .oap-wrap > div{
   	width: 400px;
   }
