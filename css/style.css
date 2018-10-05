@@ -7509,7 +7509,7 @@ nav[aria-label="breadcrumb"]{
 }
 
 .oap-right .form-wrap input{
-	margin-top: 30px;
+	margin-top: 33px;
 }
 .oap-right button.btn-next-step{
 	margin-top: 30px;
@@ -7526,7 +7526,7 @@ nav[aria-label="breadcrumb"]{
 
 .oap-right .form-wrap input[type="text"] + label, 
 .oap-right .form-wrap input[type="password"] + label{
-	top: 30px;
+	top: 38px;
 }
 
 .oap-right .form-wrap input[type="text"]:focus + label, 
@@ -7641,7 +7641,7 @@ nav[aria-label="breadcrumb"]{
 
 /* new dropdown*/
 .oap-right .form-wrap input.custom-dropdown{
-	margin-top: 2px;
+	margin-top: 6px;
 	cursor: pointer;
 }
 
@@ -7654,7 +7654,7 @@ nav[aria-label="breadcrumb"]{
     left: 0;
     right: 0;
     background: #fff;
-    top: 46px;
+    top: 50px;
     text-align: left;
     padding: 0;
     display: none;
@@ -7667,6 +7667,8 @@ nav[aria-label="breadcrumb"]{
 
 .oap-right .box-input-form .form-group .custom-dropdown + ul li{
 	padding: 5px 15px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+
 }
 
 .oap-right .box-input-form .form-group .custom-dropdown + ul li:hover,
@@ -7995,6 +7997,7 @@ nav[aria-label="breadcrumb"]{
   }
   .oap-wrap .form-wrap select.form-control{
   	display: block;
+  	margin-top: 6px;
   }
 
   /* oap loan success */

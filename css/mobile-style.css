@@ -1834,12 +1834,12 @@ nav[aria-label="breadcrumb"] + .row-search-filter {
       overflow: hidden;
     }
     .oap-content .left-title{
-      line-height: 18px;
-      font-size: 14px;
+      line-height: 21px;
+      font-size: 18px;
     }
     .oap-content .left-desc {
-      font-size: 10px;
-      line-height: 14px;
+      font-size: 14px;
+      line-height: 18px;
     }
     #oap-loan-success .proud-regis-complete .desc-title{
       font-size: 20px;
