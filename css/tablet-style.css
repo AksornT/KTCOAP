@@ -1499,4 +1499,14 @@
     height: auto;
   }
 
+  .oap-right .form-wrap input {
+    margin-top: 30px;
+    height: 32px;
+  }
+  .oap-wrap .form-wrap select.form-control {
+    margin-top: 0px;
+    height: 32px;
+    padding-bottom: 0px;
+  }
+
 }
