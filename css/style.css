@@ -7696,6 +7696,11 @@ a.red-notice{
  	max-width: none;
  }
 
+ #oap-loan .toggle-height-screen{
+ 	height: calc(100vh - 115px);
+ 	overflow: auto;
+ }
+
 
 /*Safari Only*/
 @media not all and (min-resolution:.001dpcm)
