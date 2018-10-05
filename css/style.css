@@ -7248,10 +7248,6 @@ nav[aria-label="breadcrumb"]{
 	background-color: #F6F6F7;
 	background-size: cover;
 }
-#oap-loan .toggle-height-screen{
-    height: auto;
-    overflow: auto;
-}
 #oap-loan .item img{
 	width: 100%;
     box-shadow: none;
@@ -7439,6 +7435,7 @@ nav[aria-label="breadcrumb"]{
 .oap-wrap .service-desc li{
 	font-size: 14px;
 	line-height: 1.4;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 .oap-wrap .service-desc li{
@@ -7504,6 +7501,11 @@ nav[aria-label="breadcrumb"]{
 	padding: 0 5px;
 }
 
+a.red-notice{
+	position: relative;
+	cursor: pointer;
+}
+
 .btn-wrap button + span{
 	margin: -10px 0 30px 0;
 }
@@ -7545,7 +7547,7 @@ nav[aria-label="breadcrumb"]{
 }
 
 .toggle-height-screen.height-auto{
-	height: auto;
+	overflow: auto;
 }
 
 .toggle-height-button{
@@ -7556,6 +7558,10 @@ nav[aria-label="breadcrumb"]{
 	bottom: 0;
 	width: 100%;
     background: linear-gradient(rgba(246,246,247,0), rgba(246,246,247,0.75), rgba(246,246,247,1), rgba(246,246,247,1));
+}
+
+.toggle-height-button.more{
+	position: relative;
 }
 
 .toggle-height-mobile{
@@ -7679,6 +7685,13 @@ nav[aria-label="breadcrumb"]{
 
 .oap-wrap .form-wrap select.form-control{
   	display: none;
+ }
+
+ .menu-global.full-width-menu .content-wrap {
+ 	width: 100%;
+ 	padding-left: 15px;
+ 	padding-right: 15px;
+ 	max-width: none;
  }
 
 

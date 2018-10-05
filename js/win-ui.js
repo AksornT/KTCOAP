@@ -568,9 +568,12 @@ $(document).ready(function() {
 
     //OAP toggle-height
     $('.toggle-height-button, .toggle-height-mobile').on('click touch', function () {
-        $('.toggle-height-button').toggleClass('less more');
-        $('.toggle-height-mobile').toggleClass('less more');
+        if($(this).hasClass("more")){
+            $('.toggle-height-screen').animate({ scrollTop: 0 }, "slow");
+        }
+        $(this).toggleClass('less more');
         $('.toggle-height-screen').toggleClass('height-auto');
+        return false;
     });
 
     //For custom dropdown
