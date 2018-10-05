@@ -7501,6 +7501,11 @@ nav[aria-label="breadcrumb"]{
 	padding: 0 5px;
 }
 
+a.red-notice{
+	position: relative;
+	cursor: pointer;
+}
+
 .btn-wrap button + span{
 	margin: -10px 0 30px 0;
 }
