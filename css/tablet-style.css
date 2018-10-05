@@ -1495,4 +1495,8 @@
     padding:0 15px;
   }
 
+  .toggle-height-screen.height-auto{
+    height: auto;
+  }
+
 }
