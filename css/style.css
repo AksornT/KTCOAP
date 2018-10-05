@@ -7701,6 +7701,14 @@ a.red-notice{
  	overflow: auto;
  }
 
+ .last-notice {
+ 	font-size: 14px;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+ }
+ .last-notice a{
+ 	text-decoration: underline;
+ }
+
 
 /*Safari Only*/
 @media not all and (min-resolution:.001dpcm)
