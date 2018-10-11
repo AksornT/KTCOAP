@@ -156,108 +156,22 @@ $(document).ready(function() {
      });
 
     //can submit only when all input are filled
-
     $('.form-wrap button[type="submit"]').prop('disabled', true);
-    
-    var toValidate = jQuery('.form-wrap input[type="text"].required, .form-wrap input[type="password"].required');
-    var theValidate = jQuery('.form-wrap input[type="checkbox"].required');
-    valid = false;
-    valid2 = true;
-    valid3 = true;
-    if ($('.form-wrap input[type="checkbox"]').hasClass('required')){
-        valid2 = false;
+    function myFormValidateFunction() {
+        $('.form-wrap button[type="submit"]').prop('disabled', false);
+        $('.form-wrap input[type="text"].required, .form-wrap input[type="password"].required, .form-wrap input[type="email"].required').each(function(){
+            if ($(this).val().length == 0) {
+                console.log("Still No!");
+                $(this).parent().siblings('.btn-wrap').children('button[type="submit"]').prop('disabled', true);
+            }
+        });
+        return false;
     }
 
-    theValidate.on('touch click', function () {
-        if ($(this).prop('checked') == true) {
-            jQuery(this).data('valid2', true);
-            console.log("checked");
-        } else {
-            jQuery(this).data('valid2', false);
-            console.log("notChecked");
-        }
-        theValidate.each(function () {
-            if (jQuery(this).data('valid2') == true) {
-                valid2 = true;
-            } else {
-                valid2 = false;
-            }
-        });
-        if (valid === true && valid2 === true && valid3 === true) {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
-        } else {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
-        }
-
-        console.log("valid =" + valid);
-        console.log("valid2 =" + valid2);
-        console.log("valid3 =" + valid3);
-    });
-    toValidate.on('keyup', function () {
-        if ($(this).val().length > 0) {
-            $(this).data('valid', true);
-            console.log("filled");
-        } else{
-            $(this).data('valid', false);
-            console.log("notFilled");
-        }
-        toValidate.each(function () {
-            if ($(this).data('valid') == true) {
-                valid = true;
-            } else {
-                valid = false;
-            }
-        });
-        if (valid === true && valid2  === true && valid3 === true) {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
-        } else {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
-        }
-
-        console.log("valid =" + valid);
-        console.log("valid2 =" + valid2);
-        console.log("valid3 =" + valid3);
+    $('.form-wrap input[type="text"].required, .form-wrap input[type="password"].required, .form-wrap input[type="email"].required').on('keyup', function () {
+        myFormValidateFunction();
     });
 
-    $('#myCheck').on('touch click', function () {
-        $('#email').toggle();
-        if ($("#email input").hasClass("required")) {
-            $('#email input').removeClass('required');
-            valid3 = true;
-        } else {
-            $('#email input').addClass('required');
-            valid3 = false;
-        }
-        $('#email .required').val("");
-        if (valid === true && valid2  === true && valid3 === true) {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
-        } else {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
-        }
-
-        console.log("valid =" + valid);
-        console.log("valid2 =" + valid2);
-        console.log("valid3 =" + valid3);
-    });
-
-    $('#email input').on('keyup', function () {
-        if (jQuery(this).val().length > 0) {
-            valid3 = true;
-            console.log("filled");
-        } else{
-            valid3 = false;
-            console.log("notFilled");
-        }
-        if (valid === true && valid2  === true && valid3 === true) {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
-        } else {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
-        }
-
-        console.log("valid =" + valid);
-        console.log("valid2 =" + valid2);
-        console.log("valid3 =" + valid3);
-    });
 
 
     //styling select dropdown
