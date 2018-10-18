@@ -2750,20 +2750,14 @@ article.page-content #card-detail-regis h3::after{
 	margin-top: 60px;
 	height: 30px;
 	border-radius: 0;
-	-webkit-box-shadow: 0 0 0 30px white inset !important;
+	background: none;
 }
+
 .form-wrap input:-webkit-autofill,
-.form-wrap input:focus:-webkit-autofill{
-	width: 100%;
-	padding:0;
-	border: none;
-	font-size: 16px;
-	border-bottom: rgba(90,102,112,.4) solid 1px;
-    font-family: 'Conv_SukhumvitTadmai_Tex';
-	margin-top: 60px;
-	height: 30px;
-	border-radius: 0;
-	-webkit-box-shadow: 0 0 0 30px white inset !important;
+.form-wrap input:-webkit-autofill:hover, 
+.form-wrap input:-webkit-autofill:focus{
+	-webkit-box-shadow: 0 0 0px 1000px rgba(255,255,255,0.01) inset;
+	transition: background-color 5000s ease-in-out 0s;
 }
 
 .form-wrap input::placeholder{
@@ -8040,3 +8034,4 @@ a.red-notice{
 
 
   }
+
