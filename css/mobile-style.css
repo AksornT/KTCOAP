@@ -742,6 +742,9 @@
     font-size: 18px;
     margin-bottom: 40px;
   }
+  #header-card-detail .content-desc .top-mobile{
+    margin-top: 25px;
+  }
 
   /* loan page -eve */
   .main-loan{

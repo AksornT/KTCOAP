@@ -498,6 +498,10 @@
   #header-card-detail .center-responsive{
     text-align: center;
   }
+  #header-card-detail .content-desc{
+    display: inline-block;
+    margin-top: 30px;
+  }
   #header-card-detail .content-desc.only-mobile{
     display: inline-block;
     margin-top: 30px;
@@ -506,11 +510,12 @@
   #header-card-detail .header-desc.only-desktop{
     display: none;
   }
+
   .only-mobile .desc-responsive h2{
      margin-top: 40px;
   }
   #header-card-detail .content-desc h2 {
-    font-family: 'Conv_SukhumvitTadmai_Tex';
+    font-family: 'Conv_SukhumvitTadmai_Bol';
     font-size: 30px;
   }
   #header-card-detail .content-desc h3{
