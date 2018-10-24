@@ -507,6 +507,17 @@ $(document).ready(function() {
         });
         return false;
     });
+
+    $(".custom-dropdown").keypress(function(e) {
+        e.preventDefault();
+    });
+    $(".custom-dropdown").keydown( function(e){  
+      if( e.which == 8){   
+        e.preventDefault();  
+        return false;   
+      } 
+    }); 
+
     $(".custom-dropdown + ul li").on('click touch', function () {
       var dropdownText = $(this).html();
       $(this).addClass('active');
@@ -679,6 +690,7 @@ $(document).ready(function() {
                 $(passpord).show();
                 console.log('passport');
           }
+          
       });
 
 

@@ -7647,6 +7647,7 @@ a.red-notice{
 	margin-top: 4px;
 	height: 32px;
 	cursor: pointer;
+	caret-color: transparent;
 }
 
 .oap-right .form-wrap input.custom-dropdown:hover{
