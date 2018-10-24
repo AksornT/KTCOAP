@@ -3987,6 +3987,7 @@ section#section-flexi-cards {
 .oap .box-login-con{
 	padding-top: 3vh;
 	/*padding-bottom:5.7vh;*/
+	overflow: visible;
 }
 
 .oap .app-download .media{
@@ -4394,6 +4395,10 @@ button.btn-default:disabled:hover{
 
 .oap .box-input-form .line-verticle:nth-last-child(1):before{
 	display: none;
+}
+
+.oap .box-input-form .form-group label{
+	font-size: 14px;
 }
 
 .box-input-form .form-group label{
@@ -7492,6 +7497,10 @@ nav[aria-label="breadcrumb"]{
 	margin-top: -34px;
 }
 
+.oap .form-wrap.box-login-con span.select-arrow{
+	margin-top: 2px;
+}
+
 .red-notice{
 	color: #CF3339 !important;
 	padding: 0 5px;
@@ -7643,18 +7652,21 @@ a.red-notice{
 }
 
 /* new dropdown*/
-.oap-right .form-wrap input.custom-dropdown{
+.oap-right .form-wrap input.custom-dropdown,
+.oap .form-wrap input.custom-dropdown{
 	margin-top: 4px;
 	height: 32px;
 	cursor: pointer;
 	caret-color: transparent;
 }
 
+.oap .form-wrap input.custom-dropdown:hover,
 .oap-right .form-wrap input.custom-dropdown:hover{
 	cursor: pointer;
 }
 
-.oap-right .box-input-form .form-group .custom-dropdown + ul{
+.oap-right .box-input-form .form-group .custom-dropdown + ul,
+.oap .box-input-form .form-group .custom-dropdown + ul{
     position: absolute;
     left: 0;
     right: 0;
@@ -7664,25 +7676,35 @@ a.red-notice{
     padding: 0;
     display: none;
     box-shadow: 0px 1px 4px rgba(0,0,0,.16);
+    z-index: 1;
 }
 
-.oap-right .box-input-form .form-group .custom-dropdown + ul.active{
+.oap .box-input-form .form-group .custom-dropdown + ul{
+	top: 114px;
+}
+
+.oap-right .box-input-form .form-group .custom-dropdown + ul.active,
+.oap .box-input-form .form-group .custom-dropdown + ul.active{
 	display: block;
 }
 
-.oap-right .box-input-form .form-group .custom-dropdown + ul li{
+.oap-right .box-input-form .form-group .custom-dropdown + ul li,
+.oap .box-input-form .form-group .custom-dropdown + ul li{
 	padding: 5px 15px;
 	font-family: 'Conv_SukhumvitTadmai_Tex';
 
 }
 
 .oap-right .box-input-form .form-group .custom-dropdown + ul li:hover,
-.oap-right .box-input-form .form-group .custom-dropdown + ul li.active{
+.oap-right .box-input-form .form-group .custom-dropdown + ul li.active,
+.oap .box-input-form .form-group .custom-dropdown + ul li:hover,
+.oap .box-input-form .form-group .custom-dropdown + ul li.active{
 	background: #ededed;
 	cursor: pointer;
 }
 
-.oap-wrap .form-wrap select.form-control{
+.oap-wrap .form-wrap select.form-control,
+.oap .form-wrap select.form-control{
   	display: none;
  }
 
@@ -8017,12 +8039,19 @@ a.red-notice{
   	padding: 0 55px;
   }
 
-  .oap-wrap .form-wrap .custom-dropdown{
+  .oap-wrap .form-wrap .custom-dropdown,
+  .oap .form-wrap .custom-dropdown{
   	display: none;
   }
-  .oap-wrap .form-wrap select.form-control{
+  .oap-wrap .form-wrap select.form-control,
+  .oap .form-wrap select.form-control{
   	display: block;
   	font-family: 'Conv_SukhumvitTadmai_Tex';
+  	background: none;
+  }
+
+  .oap .form-wrap.box-login-con span.select-arrow{
+  	margin-top: -36px;
   }
 
   /* oap loan success */

@@ -491,10 +491,10 @@ $(document).ready(function() {
     });
 
     //For custom dropdown
-    var dValue = $('.oap-wrap .form-wrap select.form-control option:nth-child(1)').text();
-    $('.oap-wrap .form-wrap select.form-control').after('<input class="required custom-dropdown" type="text" value="' + dValue + '"><ul class="custom-option"></ul>');
+    var dValue = $('.oap-wrap .form-wrap select.form-control option:nth-child(1), .oap .form-wrap select.form-control option:nth-child(1)').text();
+    $('.oap-wrap .form-wrap select.form-control, .oap .form-wrap select.form-control').after('<input class="required custom-dropdown" type="text" value="' + dValue + '"><ul class="custom-option"></ul>');
 
-    $('.oap-wrap .form-wrap select.form-control option').each(function(){
+    $('.oap-wrap .form-wrap select.form-control option, .oap .form-wrap select.form-control option').each(function(){
       $(this).parent().siblings('.custom-option').append('<li value="' + $(this).val() + '">'+$(this).text()+'</li>');
     });
 
@@ -690,8 +690,21 @@ $(document).ready(function() {
                 $(passpord).show();
                 console.log('passport');
           }
-          
       });
+
+      $('.custom-option li[value="idcard"]').on('click touch', function () {
+        $(idcard).show();
+        $(passpord).hide();
+        console.log('id');
+      });
+
+      $('.custom-option li[value="idcard"] + li').on('click touch', function () {
+        $(idcard).hide();
+        $(passpord).show();
+        console.log('passport');
+      });
+
+
 
 
 });
