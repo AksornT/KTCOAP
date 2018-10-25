@@ -527,6 +527,30 @@ $(document).ready(function() {
       console.log(dropdownText);
     });
 
+
+    //for credit-card checking status
+    $("#card-check").keypress(function(e) {
+        e.preventDefault();
+    });
+    $("#card-check").keydown( function(e){  
+      if( e.which == 8){   
+        e.preventDefault();  
+        return false;   
+      } 
+    }); 
+    $(".choice-wrap > .choice-list:nth-child(1)").clone().appendTo( "#choice-mask" );
+    $(".choice-wrap > .choice-list:nth-child(1)").addClass('active');
+    $( "#card-check" ).val( $(".choice-wrap > .choice-list:nth-child(1)").find("p").text() );
+    $(".choice-list").on('click touch', function () {
+      $("#choice-mask").empty();
+      $(this).clone().appendTo( "#choice-mask" );
+      $(this).addClass('active');
+      $(this).siblings().removeClass('active');
+      var cardname = $(this).find("p").text();
+      $( "#card-check" ).val( cardname );
+      $("#choice-wrap").blur();
+    });
+
 });
 
 //change header when scroll down.
@@ -595,8 +619,6 @@ $(document).on('scroll', function() {
 });
 
 //for menu mobile
-
-
 $(document).ready(function() {
 	$('.menu-responsive-dropdown h3').on('click touch', function () {
         $('.menu-responsive-dropdown h3').not(this).each(function(){

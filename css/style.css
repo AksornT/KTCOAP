@@ -7729,6 +7729,118 @@ a.red-notice{
  }
 
 
+/*credit-cards-choice*/
+
+#card-check{
+	margin-top: 0;
+	height: 50px;
+	cursor: pointer;
+	color: rgba(255,255,255,0.001);
+}
+#card-check:hover{
+	cursor: pointer;
+}
+#card-check + label{
+	display: none;
+}
+.choice-wrap{
+	position: absolute;
+	height: auto;
+	left: 0;
+	right: 0;
+	top: calc(100% + 2px);
+	background: #fff;
+	border-radius: 3px;
+	padding: 12px 10px;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 1;
+    max-height: 70vh;
+    overflow: auto;
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.16);
+}
+
+input:focus + label + .choice-wrap,
+.choice-wrap:focus{
+	opacity: 1;
+	pointer-events: all;
+}
+
+.choice-list,
+.choice-list:hover{
+	cursor: pointer;
+	padding: 0 10px;
+	text-align: left;
+	border-bottom: 1px solid rgba(91,100,112,.15);
+}
+
+.choice-list:nth-last-child(1){
+	border: none;
+}
+
+.choice-list > *{
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: middle;
+	color: #5B6670;
+	font-family: 'Conv_SukhumvitTadmai_Tex';
+    max-width: calc(100% - 75px);
+}
+
+.choice-list:hover > *{
+	color: #000;
+}
+
+.choice-img-wrap{
+	width: 73px;
+	height: 46px;
+	padding: 4px 14px 4px 0;
+	text-align: center;
+}
+
+.choice-wrap .choice-img-wrap{
+	height: 54px;
+	padding: 8px 14px 8px 0;
+}
+
+.choice-img-wrap img{
+	width: auto;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.choice-img-wrap + p{
+    max-width: calc(100% - 84px);
+    line-height: 1.4;
+}
+
+#choice-mask{
+	pointer-events:none;
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    opacity: 1;
+}
+
+#choice-mask .choice-list{
+	padding-right: 30px;
+	padding-left: 0;
+}
+
+#choice-wrap .choice-list.active,
+#choice-wrap .choice-list:hover{
+	background: #eee;
+}
+
+#choice-mask + .select-arrow{
+	margin-top: -44px;
+}
+
+
 /*Safari Only*/
 @media not all and (min-resolution:.001dpcm)
     { @supports (-webkit-appearance:none) {
