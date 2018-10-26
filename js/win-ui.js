@@ -155,9 +155,11 @@ $(document).ready(function() {
         }
      });
 
+    
+
     //can submit only when all input are filled
     $('.form-wrap button[type="submit"]').prop('disabled', true);
-    function myFormValidateFunction() {
+    var myFormValidateFunction = function() {
         $('.form-wrap button[type="submit"]').prop('disabled', false);
         $('.form-wrap input[type="text"].required, .form-wrap input[type="password"].required, .form-wrap input[type="email"].required').each(function(){
             if ($(this).val().length == 0) {
@@ -168,9 +170,13 @@ $(document).ready(function() {
         return false;
     }
 
-    $('.form-wrap input[type="text"].required, .form-wrap input[type="password"].required, .form-wrap input[type="email"].required').on('keyup', function () {
-        myFormValidateFunction();
-    });
+    var myValidateRevoke = function() {
+        $('.form-wrap input[type="text"].required, .form-wrap input[type="password"].required, .form-wrap input[type="email"].required').on('keyup', function () {
+            myFormValidateFunction();
+        });
+    }
+
+    myValidateRevoke();
 
 
 
@@ -551,6 +557,45 @@ $(document).ready(function() {
       $("#choice-wrap").blur();
     });
 
+
+    // switch between idcard - passport
+    var idcardSelected = document.getElementById("idcardSelected");
+    var idcard = document.getElementById("idcard");
+    // Input Passpord
+    var passpord= document.getElementById("passpord");
+
+
+    $('#exampleFormControlSelect1').change(function(){
+        $(this).next('input').val($(this).val());
+        $('#idpass input').val('').removeClass('hasText');
+        $('.form-wrap button[type="submit"]').prop('disabled', true);
+        if ($(this).val() == "idcard"){
+            $('#idpass label').text(id);
+            console.log('new-system id');
+            return false;
+        } else {
+            $('#idpass label').text(pass);
+            console.log('new-system passport');
+            return false;
+        }
+    });
+
+    var idValue = $('#exampleFormControlSelect1 + input + ul li:nth-child(1)').text();
+    $('#exampleFormControlSelect1 + input + ul li').on('click touch', function () {
+        $('#exampleFormControlSelect1').val($(this).text());
+        $('#idpass input').val('').removeClass('hasText');
+        $('.form-wrap button[type="submit"]').prop('disabled', true);
+        if ($(this).text() == idValue){
+            $('#idpass label').text(id);
+            console.log('new-system id');
+            return false;
+        } else {
+            $('#idpass label').text(pass);
+            console.log('new-system passport');
+            return false;
+        }
+    });
+
 });
 
 //change header when scroll down.
@@ -691,45 +736,6 @@ function show2(){
   document.getElementById('type1').style.display ='none';
 }
 
-
-
-$(document).ready(function() {
-
-      var idcardSelected = document.getElementById("idcardSelected");
-      var idcard = document.getElementById("idcard");
-      // Input Passpord
-      var passpord= document.getElementById("passpord");
-
-
-      $('#exampleFormControlSelect1').change(function(){
-      // If the checkbox is checked, display the output text
-          if ($(this).val() == "idcard"){
-                $(idcard).show();
-                $(passpord).hide();
-                console.log('id');
-          } else {
-                $(idcard).hide();
-                $(passpord).show();
-                console.log('passport');
-          }
-      });
-
-      $('.custom-option li[value="idcard"]').on('click touch', function () {
-        $(idcard).show();
-        $(passpord).hide();
-        console.log('id');
-      });
-
-      $('.custom-option li[value="idcard"] + li').on('click touch', function () {
-        $(idcard).hide();
-        $(passpord).show();
-        console.log('passport');
-      });
-
-
-
-
-});
 
 
 

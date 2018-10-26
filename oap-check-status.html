@@ -142,25 +142,27 @@
             <div class="form-group">
               <label for="exampleFormControlSelect1">เลือกประเภท</label>
               <select class="form-control" id="exampleFormControlSelect1" >
-                <option class="select-item" id="idcardSelected" value="idcard">หมายเลขบัตรประชาชน</option>
+                <option class="select-item" value="idcard">หมายเลขบัตรประชาชน</option>
                 <option class="select-item" >หมายเลขหนังสือเดินทาง</option>
               </select>
             </div>
           
-           <div class="box-input-form" id="idcard" >
+           <div class="box-input-form" id="idpass" >
             <input class="required" type="text" placeholder="หมายเลข 13 หลัก">
           </div>
-          <div class="box-input-form" id="passpord">
-            <input class="required" type="text" placeholder="หมายเลขหนังสือเดินทาง">
-          </div>
+          <script type="text/javascript">
+            // สำหรับ label 
+            var id = "หมายเลข 13 หลัก";
+            var pass = "หมายเลขหนังสือเดินทาง"
+          </script>
          
           <div class="box-input-form txt-err-padd only-this page">
             <input type="text" placeholder="หมายเลขโทรศัพท์มือถือ 10 หลัก ที่ให้ไว้กับ KTC" class="err-message required">
           </div>
 
            <!-- ขึ้นยอมรับ -->
-          <div class="box-other-form">
-             <button class="btn-next-step" id="long-button" type="submit" >ถัดไป</button>
+          <div class="box-other-form btn-wrap">
+             <button class="btn-next-step" type="submit" >ถัดไป</button>
           </div>
         </div>
           <!-- จบ div ที่ใช้จำลอง -->    <!-- จบบุคคลธรรมดา -->
@@ -176,7 +178,7 @@
           </div>
        
           <!-- ขึ้นยอมรับ -->
-            <div class="box-other-form checkbox-form">
+            <div class="box-other-form checkbox-form btn-wrap">
               <label>ยอมรับ
                 <input class="required" id="check2" type="checkbox" name="" value="">
                 <span class="checkmark"></span>
@@ -184,7 +186,7 @@
               <a class="link-regis" data-toggle="modal" data-target="#condition-modal">ข้อตกลงและเงื่อนไข</a>
             </div>
             <div>
-              <button class="btn-next-step" id="long-button" type="submit" >ถัดไป</button>
+              <button class="btn-next-step" type="submit" >ถัดไป</button>
             </div> 
           </div>
 
@@ -218,61 +220,6 @@
       </div>
     </div>
     <!-- end page -->
-
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $('.form-wrap button[type="submit"]').prop('disabled', true);
-      var toValidate1 = jQuery('.form-wrap #type1 input[type="text"].required,.form-wrap #type1 input[type="password"].required');
-      var toValidate2 = jQuery('.form-wrap #type2 input[type="text"].required,.form-wrap #type2 input[type="password"].required');
-
-    toValidate1.on('keyup', function () {
-        if (jQuery(this).val().length > 0) {
-            jQuery(this).data('valid', true);
-            console.log("filled");
-        } else{
-            jQuery(this).data('valid', false);
-            console.log("notFilled");
-        }
-        toValidate1.each(function () {
-            if (jQuery(this).data('valid') == true) {
-                valid = true;
-            } else {
-                valid = false;
-            }
-        });
-        if (valid === true || valid2 === true) {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
-        } else {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
-        }
-     });
-
-    toValidate2.on('keyup', function () {
-        if (jQuery(this).val().length > 0) {
-            jQuery(this).data('valid', true);
-            console.log("filled");
-        } else{
-            jQuery(this).data('valid', false);
-            console.log("notFilled");
-        }
-        toValidate2.each(function () {
-            if (jQuery(this).data('valid') == true) {
-                valid = true;
-            } else {
-                valid = false;
-            }
-        });
-        if (valid === true || valid2 === true) {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', false);
-        } else {
-            jQuery('.form-wrap button[type="submit"]').prop('disabled', true);
-        }
-    });
-  });
-
-      
-
-    </script>
     
 
   <!-- start Footer -->

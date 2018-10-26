@@ -7708,6 +7708,10 @@ a.red-notice{
   	display: none;
  }
 
+ .custom-dropdown + ul li.active{
+ 	pointer-events: none;
+ }
+
  .menu-global.full-width-menu .content-wrap {
  	width: 100%;
  	padding-left: 15px;
