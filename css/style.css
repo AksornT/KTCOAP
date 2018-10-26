@@ -7770,6 +7770,7 @@ input:focus + label + .choice-wrap,
 .choice-wrap:focus{
 	opacity: 1;
 	pointer-events: all;
+	outline: 0;
 }
 
 .choice-list,
